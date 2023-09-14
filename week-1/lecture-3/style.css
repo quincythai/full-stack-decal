@@ -1,0 +1,69 @@
+/* <h1 style="
+color: yellowgreen;
+font-size: 60px;
+font-weight: bolder;
+font-family: fantasy;
+text-align: center;
+border-style: solid;
+background-color: gray;
+opacity: 90%;
+box-shadow: 5px 5px 2px black;
+border-radius: 20px;
+">Welcome to my page</h1> */
+
+/* <style> */
+  body {
+    margin: 0;
+  }
+
+  .myH1 {
+    color: yellowgreen;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: fantasy;
+    text-align: center;
+    border-style: solid;
+    background-color: gray;
+    opacity: 90%;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 20px;
+  }
+
+  div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 40px;
+    background-color: rgba(94, 104, 63, 0.2);
+    margin-right: 0px;
+  }
+
+  .class1 {
+    color: red;
+  }
+
+  .class2 {
+    color: green;
+  }
+
+  /* connected classes = and */
+  .class1.class2 {
+    color: blue;
+  }
+
+  /* space = all children inside */
+  .class1 .class2 {
+    color: green
+  }
+
+  /* > = direct children only */
+  .class1 > .class2 {
+    color: green
+  }
+/* </style> */
+
+/* display:
+block - everything on new line, height determined by content;
+inline - everything squished together, height determined by content,
+inline-block - middle ground, everything squished together, where you can adjust width and height */
