@@ -1,0 +1,63 @@
+.class1 {
+  width: 250px;
+  background-color: yellowgreen;
+
+  
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  transition: transform 1s;
+}
+
+.class1 p {
+  display: inline;
+}
+
+
+.hi2:hover {
+  background-color: black;
+}
+
+.hi4:hover {
+  background-color: red;
+}
+
+.hi3:hover {
+  transform: scale(0.5);
+}
+
+.class2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cyan;
+}
+
+.class2 img {
+  width: 300px;
+  height: 200px;
+}
+
+p:first-child {
+  font-size: 40px;
+}
+
+#yokota {
+  width: 100vw;
+  height: 500px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  img {
+    transition: transform 5s;
+    transform: scale(0.5) rotate(-9000deg);
+  }
+  img:hover {
+    transition: transform 2s;
+    transform: scale(2) rotate(9000deg);;
+  }
+}
