@@ -1,3 +1,5 @@
+
+
 html {
   margin: 0;
   padding: 0;
@@ -5,4 +7,13 @@ html {
 
 h1 {
   text-align: center;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+.project-image, .author-photo {
+  width: 200px;
+  height: auto;
 }
