@@ -1,6 +1,5 @@
-
-
-html {
+html { 
+  /* overall better than using '*' */
   margin: 0;
   padding: 0;
 }
