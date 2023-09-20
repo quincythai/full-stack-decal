@@ -1,0 +1,61 @@
+/**
+ * Don't modify these, these are some styles
+ * to make the divs look clearer.
+ */
+* {
+  box-sizing: border-box;
+}
+
+.all-containers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question {
+  margin-right: 32px;
+}
+
+.question > div {
+  border: 1px solid #aaa;
+  width: 300px;
+  height: 300px;
+  resize: both;
+  overflow: auto;
+}
+
+.question > div > div {
+  padding: 8px;
+}
+
+.question > div > :nth-child(1) {
+  background: hsl(0deg 80% 80%);
+}
+
+.question > div > :nth-child(2) {
+  background: hsl(90deg 80% 80%);
+}
+
+.question > div > :nth-child(3) {
+  background: hsl(180deg 80% 80%);
+}
+
+.question > div > section {
+  border: 1px dashed black;
+}
+
+.question > div > section > :nth-child(1) {
+  background: hsl(0deg 80% 60%);
+}
+
+.question > div > section > :nth-child(2) {
+  background: hsl(90deg 60% 60%);
+}
+
+.question > div > section > :nth-child(3) {
+  background: hsl(180deg 60% 60%);
+}
+
+/** Question-specific */
+.container-4 > div:nth-child(2) {
+  border: 4px dashed green;
+}
