@@ -2,6 +2,9 @@ html {
   /* overall better than using '*' */
   margin: 0;
   padding: 0;
+
+  background-color: #fefae0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
@@ -14,5 +17,14 @@ a {
 
 .project-image, .author-photo {
   width: 200px;
+  height: auto;
+}
+
+.name-header {
+  border: dotted;
+}
+
+.lifting-gif {
+  width: 400px;
   height: auto;
 }
