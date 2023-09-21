@@ -1,0 +1,141 @@
+<h1>Website</h1>
+
+<script>
+  // // alert('Hello world');
+  // // confirm('Accept or cancel?');
+  // // prompt('What\'s your name?');
+
+  // /* above 2 have return values */
+
+  // console.log('Inspect the console...');
+
+  // // alert(prompt('What is your name?'));
+
+  // // javascript uses camelCase as convention
+  // // var javaScriptVar;
+
+  // var firstName = 'quincy';
+  // var lastName = "thai";
+
+  // var sentence = 'Hello ' + firstName + ' ' + lastName;
+  // var sentenceWithTemplate = `Hello ${firstName} ${lastName}`;
+
+  // var trueValue = true; // booleans are lowercase.
+
+  // var x = 5;
+  // x == 5; // true
+  // x == "5"; // true
+
+  // x === 5 // true;
+  // x === "5" // false;
+
+  // // === is a strict equals (data type and value)
+  // // same for !== and !=
+
+  // if (trueValue) {
+
+  // } else if (!trueValue) {
+
+  // } else {
+
+  // }
+
+  // var friendsAtParty = 0;
+  // while (friendsAtParty < 10) {
+  //   friendsAtParty++;
+  // }
+
+  // let friendsAtParty = 0;
+  // for (let i = 0; i < 10; i++) {
+  //   friendsAtParty++;
+  // }
+
+  // // in new code, use let. old code uses var. both are identical
+
+  // function addTwo(number) {
+  //   return number + 2;
+  // }
+
+  // let finalAnswer = addTwo(4);
+
+  // let password = prompt('Enter password: ');
+  // let attempts = 0;
+  // while (password != '1234') {
+  //   if (attempts === 10) {
+  //     alert('No more attempts... you have failed ' + attempts + ' amount of times');
+  //     break;
+  //   }
+  //   attempts++;
+  //   password = prompt('Enter password: ');
+  // }
+
+  // if (attempts < 10) {
+  //   alert(`It took you ${attempts} attempts!`);
+  // }
+
+  function askForName() {
+    let name = prompt('Name: ');
+    if (name === "") {
+      alert('no name entered...');
+    } else if (name !== "") {
+      alert(`Your name is ${name}`);
+    } else {
+      alert('why did you cancel');
+    }
+  }
+  console.log(name)
+
+  let defaultReturnValue = askForName();
+  console.log(defaultReturnValue); // undefined
+
+  const anUnchangeableValue = 1;
+
+  let small = "Hello".toLowerCase();
+  let big = "Hello".toUpperCase();
+  Math.round(5.7);
+
+  let startIndex = 0;
+  let endIndex = 2;
+  "a very bad function".substring(startIndex, endIndex);
+  typeof(5)
+  parseInt("44") // string to number
+  "myString".length;
+
+  const person = {
+    name: "Josh Hug",
+    city: "Austin",
+    favoriteClass: "61B",
+    wantsToSkate: true,
+  };
+
+  console.log(person);
+  console.log(person.name);
+  console.log(person['name']);
+
+  let myObj = { name: "John", age: 31, city: "New York" };
+  let myJSON = JSON.stringify(myObj);
+  console.log(myJSON);
+
+  // arrow functions like lambda functions
+  // arrays are just like python
+
+  JSON.stringify(person);
+  JSON.parse(JSON.stringify(person));
+
+  let myArray = [1, 2, 3, 4];
+  myArray[2];
+
+  myArray = [...myArray, 5, 6];
+
+  let superHug = {...person, super: true};
+
+  function shortFunction(arg1, arg2) {
+    return arg1 + arg2;
+  }
+
+  let myFunction = (arg1, arg2) => {
+    return arg1 + arg2;
+  }
+
+</script>
+<!-- <script src="my-javascript-file.js"></script> -->

@@ -26,11 +26,10 @@
 
 /** Question 3 */
 .container-3 {
-  /** YOUR CODE HERE */
 }
 
 .container-3 > div {
-  /** YOUR CODE HERE */
+  max-width: 250px;
 }
 
 /** Question 4 */
