@@ -18,7 +18,7 @@ a {
 .author-photo {
   width: 200px;
   height: 300px;
-  transition: background-image 0.2s;
+  transition: background-image 0.4s;
   background-size: cover;
   background-position: center;
   background-image: url(media/quincy2.jpeg);
