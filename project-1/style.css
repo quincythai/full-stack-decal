@@ -7,7 +7,7 @@ html {
   font-family: 'Courier New', Courier, monospace;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
@@ -15,16 +15,20 @@ a {
   text-decoration: none; /* Remove underline */
 }
 
-.project-image, .author-photo {
+.author-photo {
   width: 200px;
-  height: auto;
+  height: 300px;
+  transition: background-image 0.2s;
+  background-size: cover;
+  background-position: center;
+  background-image: url(media/quincy2.jpeg);
+}
+
+.author-photo:hover {
+  background-image: url(media/quincy.jpeg);
 }
 
 .name-header {
   border: dotted;
 }
 
-.lifting-gif {
-  width: 400px;
-  height: auto;
-}

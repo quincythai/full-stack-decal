@@ -1,0 +1,17 @@
+html { 
+  /* overall better than using '*' */
+  margin: 0;
+  padding: 0;
+
+  background-color: #fefae0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+}
+
+.project-image {
+  width: 200px;
+  height: auto;
+}
