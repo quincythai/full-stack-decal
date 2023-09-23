@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="opener" id="openerId">Oski is the best</h1>
+  <img src="https://cdn.vox-cdn.com/thumbor/4rJ7OdYmzECdCYZCms00CyNZyyg=/0x0:5568x3712/1200x0/filters:focal(0x0:5568x3712):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11816637/usa_today_10376139.jpg" alt="oski" width="200px">
+  <p></p>
+
+  <h2>Oski's shoes</h2>
+  <ul>
+    <li>Nike</li>
+    <li>Adidas</li>
+    <li>Balenciagas</li>
+    <li>Crocs</li>
+  </ul>
+
+  <button id="grayButton">Gray</button>
+  <button id="tanButton">Tan</button>
+  <button id="reset" onclick="resetColor()">Reset</button>
+
+  <input id="colorInput">
+  <button id="colorButton">Your color</button>
+</body>
+<script>
+  const firstChange = document.querySelector('h1');
+  firstChange.innerHTML = "Oski is mid asf...";
+  firstChange.style.backgroundColor = "yellow";
+
+  const grabById = document.getElementById('openerId');
+
+  // stores all the list items
+  const listStorage = document.querySelectorAll('li');
+  for (let i = 0; i < listStorage.length; i++) {
+    listStorage[i].innerHTML = "Birkenstocks...";
+    listStorage[i].style.background = "cyan";
+  }
+
+  function changeTheColorGray() {
+    document.querySelector('html').style.backgroundColor = "gray";
+  }
+
+  function changeTheColorTan() {
+    document.querySelector('html').style.backgroundColor = "tan";
+  }
+
+  function resetColor() {
+    document.querySelector('html').style.backgroundColor = "white";
+  }
+
+  document.getElementById('tanButton').addEventListener('click', changeTheColorTan);
+  document.getElementById('grayButton').addEventListener('click', changeTheColorGray);
+
+  function changeTheColor(chosenColor) {
+    document.querySelector('html').style.backgroundColor = chosenColor;
+  }
+
+  function changeTheColorClick() {
+    changeTheColor(document.getElementById('colorInput').value);
+  }
+  document.getElementById('colorButton').addEventListener('click', changeTheColorClick);
+
+
+  const h1test =document.createElement('h1');
+  h1test.innerHTML = "Test1000";
+  firstChange.appendChild(h1test);
+
+
+
+
+</script>
+</html>
