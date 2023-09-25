@@ -32,11 +32,17 @@ const question1 = () => {
  * Question 2
  */
 const question2 = () => {
-  const taskName = __YOUR_CODE_HERE__;
-  const addTodoButton = __YOUR_CODE_HERE__;
-  const todoListUl = __YOUR_CODE_HERE__;
+  const taskName = document.getElementById("task-name");
+  const addTodoButton = document.getElementById("add-todo");
+  const todoListUl = document.getElementById("todo-list");
 
-  /** YOUR CODE HERE */
+  addTodoButton.addEventListener("click", (event) => {
+    // Create li element, set its text content, and append child to the ul parent
+    const listElement = document.createElement("li");
+    listElement.textContent = taskName.value;
+    todoListUl.appendChild(listElement);
+    taskName.value = ""; // Clear input after adding
+  });
 };
 
 /**
