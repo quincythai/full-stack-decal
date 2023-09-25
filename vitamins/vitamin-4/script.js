@@ -37,11 +37,13 @@ const question2 = () => {
   const todoListUl = document.getElementById("todo-list");
 
   addTodoButton.addEventListener("click", (event) => {
-    // Create li element, set its text content, and append child to the ul parent
-    const listElement = document.createElement("li");
-    listElement.textContent = taskName.value;
-    todoListUl.appendChild(listElement);
-    taskName.value = ""; // Clear input after adding
+    if (taskName.value !== "") {
+      // Create li element, set its text content, and append child to the ul parent
+      const listElement = document.createElement("li");
+      listElement.textContent = taskName.value;
+      todoListUl.appendChild(listElement);
+      taskName.value = ""; // Clear input after adding
+    }
   });
 };
 
