@@ -2,8 +2,8 @@
  * Question 1
  */
 const question1 = () => {
-  const sidebarButton = __YOUR_CODE_HERE__;
-  const sidebar = __YOUR_CODE_HERE__;
+  const sidebarButton = document.getElementById("sidebar-button");
+  const sidebar = document.getElementById("sidebar");
 
   // Listen for a "click" event on the sidebar's button.
   //
@@ -14,14 +14,16 @@ const question1 = () => {
   // addEventListener will then call the function we provide
   // whenever the button is clicked.
   sidebarButton.addEventListener("click", (event) => {
-    const sidebarIsOpen = __YOUR_CODE_HERE__;
+    const sidebarIsOpen = sidebar.classList.contains("opened");
 
     if (sidebarIsOpen) {
       // Close the sidebar
-      /** YOUR CODE HERE */
+      sidebar.classList.remove("opened")
+      sidebarButton.innerHTML = "›";
     } else {
       // Open the sidebar
-      /** YOUR CODE HERE */
+      sidebar.classList.add("opened")
+      sidebarButton.innerHTML = "‹";
     }
   });
 };
