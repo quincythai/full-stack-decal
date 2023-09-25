@@ -51,15 +51,16 @@ const question2 = () => {
  * Question 3
  */
 const question3 = () => {
-  const firstNameInput = __YOUR_CODE_HERE__;
-  const lastNameInput = __YOUR_CODE_HERE__;
-  const message = __YOUR_CODE_HERE__;
+  const firstNameInput = document.getElementById("first-name");
+  const lastNameInput = document.getElementById("last-name");
+  const message = document.getElementById('message');
 
   const updateMessage = () => {
-    /** YOUR CODE HERE */
+    message.textContent = `Hello ${firstNameInput.value} ${lastNameInput.value}!`;
   };
 
-  /** YOUR CODE HERE */
+  firstNameInput.addEventListener("input", updateMessage);
+  lastNameInput.addEventListener("input", updateMessage);
 };
 
 /**
