@@ -11,7 +11,7 @@ html {
 }
 
 header, main {
-    padding: 20px 80px;
+    padding: 16px 80px;
 }
 
 ul, li, a {
@@ -21,12 +21,8 @@ ul, li, a {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    /* margin: 40px 100px; */
-    gap: 20px;
 }
 
 header .icon {
@@ -34,7 +30,6 @@ header .icon {
     height: 50px;
     background-image: url(media/fullstack.png);
     background-size: cover;
-
 }
 
 header {
@@ -42,6 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: white;
 }
 
@@ -51,7 +47,7 @@ header ul {
 }
 
 header a {
-    color: var(--white);
+    color: black;
     font-size: 20px;
     font-weight: bold;
 }
@@ -66,8 +62,8 @@ main {
 main .intro-container {
     display: flex;
     padding: 0 250px;
+    padding-bottom: 20px;
     gap: 50px;
-    padding-bottom: 40px;
     border-bottom: 1px solid grey;
     justify-content: space-between;
     align-items: center;
@@ -81,15 +77,65 @@ main .intro-container .text-container {
 main .intro-container .name {
     font-weight: bold;
     font-size: 100px;
+    margin: 0;
 }
 
 main .intro-container .subtext {
-    max-width: 250px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.70);
 }
 
 main .intro-container img {
-    width: 300px;
+    width: 240px;
 }
+
+main .intro-container .icons {
+    display: flex;
+    gap: 10px;
+}
+
+main .intro-container .icons img {
+    width: 25px;
+}
+
+main .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 250px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+main .about-me p {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+main .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 250px;
+}
+
+main .projects .header {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+main 
+
+/* footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    color: black;
+    border-top: 1px solid grey;
+} */
 
 /* body {
     animation: fadeInAnimation ease 3s;
