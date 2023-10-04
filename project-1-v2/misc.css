@@ -1,0 +1,117 @@
+html { 
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+header, main {
+    padding: 16px 80px;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header .icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(media/fullstack.png);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    background: radial-gradient(circle 40vw at 0px 700px, #dbc1ffa1, transparent),
+    radial-gradient(circle 40vw at 50% 600px, #ffe2fbcf, transparent),
+    radial-gradient(circle 40vw at 70% 800px, #7ad4d333, transparent),
+    linear-gradient(transparent, 400px, transparent, 1000px, hsla(225.7, 59.23%, 69.34%, 0.12), #ffe2fbcf);
+    min-height: 100vh;
+}
+
+main .lifts .header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main .lifts .header-container .header {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+main .lifts .cards {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+main .lifts .lift-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main .lifts img {
+    width: 300px;
+    height: auto;
+}
+
+main .lifts .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+/* h1, h2 {
+    text-align: center;
+  }
+  
+  .lifting-gif {
+    width: 400px;
+    height: auto;
+  }
+  
+  .my-lifts-div {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .lift-placard {
+    padding: 20px;
+  }
+  
+  .lift-placard img {
+    width: 90%;
+    height: 70%;
+  } */
