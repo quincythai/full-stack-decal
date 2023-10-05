@@ -1,0 +1,208 @@
+html { 
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+header, main {
+    padding: 16px 80px;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header .icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(media/fullstack.png);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: var();
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    background: radial-gradient(circle 40vw at 0px 700px, #dbc1ffa1, transparent),
+    radial-gradient(circle 40vw at 50% 600px, #ffe2fbcf, transparent),
+    radial-gradient(circle 40vw at 70% 800px, #7ad4d333, transparent),
+    linear-gradient(transparent, 400px, transparent, 1000px, hsla(225.7, 59.23%, 69.34%, 0.12), #ffe2fbcf);
+}
+
+main .intro-container {
+    display: flex;
+    padding: 0 250px;
+    padding-bottom: 20px;
+    gap: 50px;
+    border-bottom: 1px solid grey;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .intro-container .text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+main .intro-container .name {
+    font-weight: bold;
+    font-size: 100px;
+    margin: 0;
+}
+
+main .intro-container .subtext {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.70);
+}
+
+main .intro-container img {
+    width: 240px;
+}
+
+main .intro-container .icons {
+    display: flex;
+    gap: 10px;
+}
+
+main .intro-container .icons img {
+    width: 25px;
+}
+
+main .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 250px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+main .about-me p {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+main .projects, 
+main .resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 250px;
+    border-bottom: 1px solid grey;
+}
+
+main .projects {
+    padding-bottom: 40px;
+}
+
+main .header {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .projects .cards {
+    display: flex;
+    gap: 20px;
+}
+
+main .projects .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: rgba(0, 0, 0, 0.70) solid;
+    border-radius: 12px;
+    width: 300px;
+}
+
+main .projects .card .title {
+    font-size: 22px;
+}
+
+main .projects img {
+    width: 200px;
+}
+
+main .projects .card .subtext {
+    color: rgba(0, 0, 0, 0.70);
+    text-align: center;
+}
+
+main .resume p, 
+main .misc p {
+    color: black;
+}
+
+main .resume {
+    padding-bottom: 0;
+}
+
+main .misc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: solid gray 1px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-top: 1px solid grey;
+}
+
+/* body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+} */

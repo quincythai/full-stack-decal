@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Quincy Thai's personal website">
+    <meta name="keywords" content="HTML, CSS, Web development at Berkeley, Intro to Full Stack Development Decal">
+    <meta name="author" content="Quincy Thai">
+    <meta name="theme-color" content="#226DAA">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Quincy's Site</title>
+</head>
+
+<body>
+    <header> 
+        <div>
+            <a href="https://fullstackdecal.com/">
+                <img src="media/fullstack.png" alt="Icon" class="icon">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <!-- <li><a href="#">Home</a></li> -->
+                <li><a id="discordLink">Discord</a></li>
+                <li><a id="contactLink">Contact</a></li>
+                <!-- <li></li> Dark mode -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro-container">
+            <div class="text-container">
+                <p class="name">Quincy Thai</p>
+                <div>
+                    <p class="subtext">Hi! I'm Quincy, and I am a transfer student studying Computer Science at UC Berkeley.</p>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/quincythai/">
+                                <img src="media/linkedin.svg" alt="linkedin">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/quincythai">
+                                <img src="media/github.svg" alt="github">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="mailto:quincythai@berkeley.com">
+                                <img src="media/mail.svg" alt="mail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="media/quincy2.jpeg" alt="photo of me" class="portrait">
+        </div>
+        <div class="about-me">
+            <p>I am an aspiring web developer with hopes of pursuing a career as a software engineer in the future. My passion is in finding new ways of making elegant websites.</p>
+        </div>
+        <div class="projects">
+            <p class="header">Projects</p>
+            <div class="cards">
+                <div class="card">
+                    <p class="title">YouTube Replica</p>
+                    <a href="https://github.com/quincythai/youtube-replica">
+                        <img src="media/youtube.png" alt="project image">
+                    </a>
+                    <p class="subtext">YouTube homepage replica built with HTML, CSS.</p>
+                </div>
+                <div class="card">
+                    <p class="title">Bears, Bees, Honey</p>
+                    <a href="https://quincythai.github.io/bears-bees-honey/">
+                        <img src="media/bear.png" alt="project image">
+                    </a>
+                    <p class="subtext">Berkeley themed Rock, Paper Scissors game!</p>
+                </div>
+                <div class="card">
+                    <p class="title">Etch-a-Sketch</p>
+                    <a href="https://quincythai.github.io/etch-a-sketch/">
+                        <img src="media/etch.png" alt="project image">
+                    </a>
+                    <p class="subtext">Online sketchpad built using JavaScript.</p>
+                </div>
+                <div class="card">
+                    <p class="title">Calculator</p>
+                    <a href="https://quincythai.github.io/calculator/">
+                        <img src="media/calc.png" alt="project image">
+                    </a>
+                    <p class="subtext">Simple, minimal calculator.</p>
+                </div>
+            </div>
+        </div>
+        <div class="resume">
+            <a href="media/resume.pdf">
+                <p class="header">Resume</p>
+            </a>
+        </div>
+        <div class="misc">
+            <a href="./lifts.html">
+                <p class="header">Miscellaneous</p>
+            </a>
+        </div>
+        <div class="form-div" id="formDiv">
+            <h3>Want to know how much I can lift...?</h3>
+            <form action="/submit" method="post">
+                <p>Name: </p>
+                <input type="text" name="name" id="name">
+                <p>Email: </p>
+                <input type="text" name="email" id="email">
+                <button class="button" type="submit">Submit</button>
+            </form>
+            <div id="signups">
+                <h3>Sign-ups</h3>
+                <ul id="submissionList"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script> quincythai </p>
+    </footer>
+</body>
+
+</html>
