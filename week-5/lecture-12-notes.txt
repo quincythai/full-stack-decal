@@ -1,0 +1,4 @@
+API
+  a website that returns raw information (usually in JSON file)
+  can make request to a link and get this information
+
